@@ -103,8 +103,8 @@
     .container {
         border: 1px solid white;
         border-radius: 10px;
-        width: 95%;
-        height: 95%;
+        width: 101%;
+        height: 101%;
         display: flex;
         overflow: hidden;
         @include tablet {
@@ -114,17 +114,18 @@
         .sidebar {
             flex: 1; 
             position: relative;
-            background-color: darkcyan;
+            background-color: rgb(239, 238, 238);
             
 
             .navbar {
                 display: flex;
                 align-items: center;
-                background: cyan;
+                background-color: white;
                 height: 50px;
                 padding: 10px;
                 justify-content: space-between;
                 color: darkblue;
+                border-color: black;
 
                 .logo {
                     font-weight:bold;
@@ -143,10 +144,11 @@
                     }
 
                     button {
-                        background-color: rgb(0, 10, 10);
-                        color: red;
+                        background-color: #0093E9;
+                background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+                        color: blue;
                         font-size: 10px;
-                        border: none;
+                        border-color: black;
                         cursor: pointer;
                         @include tablet {
                             position: absolute;
@@ -164,7 +166,7 @@
             input{
                 background-color: transparent;
                 border: none;
-                color: white;
+                color: black;
                 outline: none;
 
                 &::placeholder{
@@ -179,11 +181,11 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        color: white;
+        color: black;
         cursor: pointer;
         
         &:hover{
-            background-color: #2f2d52;
+            background-color: #dadadd;
         }
 
         img{
@@ -202,7 +204,7 @@
                 }
                 p{
                     font-size: 14px; 
-                    color: white;
+                    color: black;
                 }
             }
         }
@@ -213,12 +215,12 @@
 
             .chatInfo {
                 height: 50px;
-                background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+                background-color: rgb(239, 238, 238);
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 10px;
-                color: lightgreen;
+                color: black;
             }
 
             .chatIcons {
@@ -233,7 +235,7 @@
             }
 
             .messages{
-                background-color: lightgray;
+                background-image: linear-gradient(0deg, #D7E1EC 0%, #FFFFFF 100%);
                 padding: 10px;
                 height: calc(100% - 160px);
                 overflow: scroll;
@@ -303,7 +305,7 @@
                     width: 100%;
                     border: none;
                     outline: none;
-                    color: yellow;
+                    color: black;
                     font-size: 16px;
 
                     &::placeholder {
@@ -326,7 +328,8 @@
                         border: none;
                         padding: 10px 15px;
                         color: blue;
-                        background-color: gold;
+                        background-color: #0093E9;
+                background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
                     }
                 }
 
